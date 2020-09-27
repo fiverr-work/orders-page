@@ -1,0 +1,248 @@
+/*
+============= Style Table ============
+1- Import Fonts
+2- Commun styles and reset
+3- Order Number
+4- Orders Top Informations
+5- Products
+6- Total
+*/
+
+/*==== 1- Import Fonts ====*/
+
+/* Avenir Next */
+@font-face {
+	font-family: "Avenir Next Bold";
+	src: url("../fonts/Avenir_Next/AvenirNext-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Avenir Next Demibold";
+	src: url("../fonts/Avenir_Next/AvenirNext-DemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Avenir Next Regular";
+	src: url("../fonts/Avenir_Next/AvenirNext-Regular.ttf");
+}
+
+/* Avenir Next Condensed*/
+@font-face {
+	font-family: "Avenir Next Condensed Bold";
+	src: url("../fonts/Avenir_Next_Condensed/AvenirNextCondensed-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Avenir Next Condensed Medium";
+	src: url("../fonts/Avenir_Next_Condensed/AvenirNextCondensed-Medium.ttf");
+}
+
+@font-face {
+	font-family: "Avenir Next Condensed Demibold";
+	src: url("../fonts/Avenir_Next_Condensed/AvenirNextCondensed-DemiBold.ttf");
+}
+
+/* Open Sans*/
+@font-face {
+	font-family: "Open Sans Bold";
+	src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+}
+
+/*==== 2- Commun styles and reset ====*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 10px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: #0904D6;
+}
+
+.line-through {
+	color: #EB2828;
+	text-decoration: line-through;
+}
+
+.container {
+	border: 1px solid #5AA561;
+	border-radius: 10px;
+	padding: 10px 13px 20px;
+	height: auto;
+	max-width: 450px;
+	margin: 0 auto;
+}
+
+/*==== 3- Order Number ====*/
+.order-num {
+	background: #5AA561;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 5px 9px;
+	margin-bottom: 16px;
+	color: white;
+	text-align: center;
+}
+
+.order-num h3 {
+	font-family: "Avenir Next Bold";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.order-num span {
+	font-family: "Avenir Next DemiBold";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+/*==== 4- Orders Top Informations ====*/
+.top-info li {
+	display: flex;
+	align-items: start;
+	margin-bottom: 10px;
+	font-family: "Avenir Next Regular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.top-info li img {
+	margin-right: 10px;
+}
+
+/*==== 5- Products ====*/
+.product-items .title {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	font-family: "Avenir Next Condensed Demibold";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 12px;
+}
+
+.product-items .item {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.product-items .item .info {
+	display: flex;
+	font-family: "Avenir Next Regular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.item .info .photo {
+	margin-right: 8px;
+	position: relative;
+}
+
+.item .info .photo img:first-child {
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.product-items .item .info ul li {
+	margin-bottom: 5px;
+}
+
+.shiping-status .status {
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.shiping-status {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.shiping-status .status h4 {
+	margin-right: 5px;
+	text-transform: uppercase;
+	font-family: "Open Sans Bold", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+}
+
+.shiping-status .tracking {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.shiping-status .tracking label {
+	font-family: "Avenir Next Condensed Medium";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: capitalize;
+	color: #585858;
+}
+
+.shiping-status .tracking span,
+.tracking a {
+	align-self: flex-end;
+	margin-top: 5px;
+	font-family: "Avenir Next Condensed Demibold";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/*==== 6- Total ====*/
+.total {
+	margin-top: 15px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.total>div {
+	display: flex;
+}
+
+.total .label-title {
+	margin-right: 10px;
+	text-align: right;
+	font-family: "Avenir Next Demibold";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.total .lebel-value {
+	font-family: "Avenir Next Regular";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+}
